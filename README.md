@@ -1,3 +1,5 @@
+![simple_shell](https://github.com/buildBreakReapeat/simple_shell/assets/126336909/086de956-d306-4d27-859d-93f08e873a83)
+
 0x16. C - Simple Shell
 ======================
 
@@ -350,23 +352,4 @@ julien@ubuntu:~/shell$
 
 ```
 
-**Repo:**
 
--   GitHub repository: `simple_shell`
-
-### 7\. What happens when you type `ls -l *.c` in the shell
-
-mandatory
-
-Write a blog post describing step by step what happens when you type `ls -l *.c` and hit Enter in a shell. Try to explain every step you know of, going in as much details as you can, give examples and draw diagrams when needed. You should merge your previous knowledge of the shell with the specifics of how it works under the hoods (including syscalls).
-
--   Have at least one picture, at the top of the blog post
--   Publish your blog post on Medium or LinkedIn
--   Share your blog post at least on LinkedIn
--   Only one blog post by team
--   The blog post must be done and published before the first deadline (it will be part of the manual review)
--   Please, remember that these blogs must be written in English to further your technical ability in a variety of settings
-
-When done, please add all urls below (blog post, LinkedIn post, etc.)
-
-#### Add URLs here:
