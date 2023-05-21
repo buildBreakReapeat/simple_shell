@@ -1,4 +1,7 @@
-![simple_shell](https://github.com/buildBreakReapeat/simple_shell/assets/126336909/6f02e079-2652-494f-8727-7f32aba087a9)
+![simple_shell](https://github.com/buildBreakReapeat/simple_shell/assets/126336909/39e6cba8-d04c-4b60-9820-df7575618c91)
+
+
+
 0x16. C - Simple Shell
 ======================
 
