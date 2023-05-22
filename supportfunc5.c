@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _strcat - concat two strings
+ * _strcat - strcat
  * @str1: first string
  * @str2: second string
  *
@@ -34,7 +34,7 @@ char *_strcat(char *str1, char *str2)
 }
 
 /**
- * _atoi - converts string to an integer
+ * _atoi - atoi
  * @str: string
  *
  * Return: an integer
@@ -71,9 +71,9 @@ int _atoi(char *str)
 }
 
 /**
- * _strcmp - Strcmp function
- * @str1: String 1
- * @str2: String 2
+ * _strcmp - strcmp
+ * @str1: tring 1
+ * @str2: tring 2
  *
  * Return: Returns the difference of the strings
  */
@@ -97,4 +97,65 @@ int _strcmp(const char *str1, const char *str2)
 	}
 	result = s1 - s2;
 	return (result);
+}
+
+/**
+ * _strtok - strtok
+ * @str: str
+ * @delim: delim
+ *
+ * Return: ret
+ */
+char *_strtok(char *str, char delim)
+{
+	static char *tok1, *tok2;
+	unsigned int i;
+
+	if (str != NULL)
+		tok2 = str;
+	tok1 = tok2;
+	if (tok1 == NULL)
+		return (NULL);
+	for (i = 0; tok1[i] != '\0'; i++)
+	{
+		if (tok1[i] != delim)
+			break;
+	}
+	if (tok2[i] == '\0')
+	{
+		tok2 = NULL;
+		return (NULL);
+	}
+	tok1 = tok2 + i;
+	tok2 = tok1;
+	for (i = 0; tok2[i] != '\0'; i++)
+	{
+		if (tok2[i] == delim)
+			break;
+	}
+	if (tok2[i] == '\0')
+		tok2 = NULL;
+	else
+	{
+		tok2[i] = '\0';
+		tok2 += i + 1;
+		if (tok2[0] == '\0')
+			tok2 = NULL;
+	}
+	return (tok1);
+}
+
+/**
+ * _strlen - count str
+ * @s: str
+ *
+ * Return: count str
+ */
+int _strlen(const char *s)
+{
+	int i = 0;
+
+	while (s[i])
+		i++;
+	return (i);
 }
