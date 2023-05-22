@@ -5,7 +5,7 @@
  * @str: The buffer
  * @size: size string
  *
- * Return: The clean buffer
+ * Return: trimmed buffer
  */
 char *trim_buff(char *str, int size)
 {
