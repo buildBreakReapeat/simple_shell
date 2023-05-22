@@ -39,7 +39,7 @@ int is_setenv(char *str)
 {
 	char *clone = _strdup(str), *name = NULL, *value = NULL;
 
-	if (strcmp(_strtok(clone, ' '), "setenv") == 0)
+	if (_strcmp(_strtok(clone, ' '), "setenv") == 0)
 	{
 		name = _strtok(NULL, ' ');
 		value = _strtok(NULL, ' ');
