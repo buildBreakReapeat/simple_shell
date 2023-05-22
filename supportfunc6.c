@@ -156,3 +156,17 @@ char *_getenv(const char *var)
 	}
 	return (value);
 }
+
+/**
+ * waitAndFree - Waits and frees things
+ * @status: Status of the process
+ * @argv: Array to free
+ * @dup: Duplicated array to free
+ *
+ * Return: Returns the status of isatty
+ */
+void wait_free(int status, char **argv, char *dup)
+{
+	wait(&status);
+	free_array_dup(argv, dup);
+}
