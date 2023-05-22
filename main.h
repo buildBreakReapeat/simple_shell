@@ -33,7 +33,6 @@ char *_strcpy(char *dest, char *src);
 char *_getenv(const char *name);
 void signal_isatty(void);
 ssize_t _getline(char **lineptr, size_t *n, FILE *stream);
-
 int is_str(char *str);
 int _atoi(char *s);
 int is_setenv(char *str);
