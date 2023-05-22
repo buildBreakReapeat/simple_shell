@@ -68,8 +68,8 @@ char *create_variable(char *name, char *value)
 }
 
 /**
- * args - Counts arguments of a function
- * @str: String to traverse
+ * args - count arg of a function
+ * @str: str to trav
  *
  * Return: count arguments
  */
