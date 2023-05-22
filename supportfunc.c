@@ -90,10 +90,10 @@ int is_unset(char *str)
 }
 
 /**
- * cd_handler - checker for cd (cd function)
- * @str: str to trav
+ * cd_handler - cd function hanndelr
+ * @str: str to search
  *
- * Return: If there's a coincidence or not
+ * Return: int
  */
 int cd_handler(char *str)
 {
