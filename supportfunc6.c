@@ -87,7 +87,7 @@ ssize_t _getline(char **lineptr, size_t *n, FILE *stream) {
 
 /**
  * path - if a file exists
- * @filename: name of the file
+ * @filename: name of file
  *
  * Return:  absolute path of file or NULL
  */
