@@ -44,3 +44,16 @@ void free_array_dup(char **array, char *dup)
 	free(array);
 	free(dup);
 }
+
+
+/**
+ * free_and_exit - Frees a buffer and exits the function
+ * @buffer: Buffer to free
+ */
+void free_and_exit(char *buffer)
+{
+	if (isatty(STDIN_FILENO) == 1)
+		write(STDOUT_FILENO, "\n", 1);
+	free(buffer);
+	exit(0);
+}
