@@ -1,7 +1,7 @@
 #include "main.h"
 #include <errno.h>
 /**
- * _strdup - strdup 
+ * _strdup - strdup implementation
  * @str: str to duplicate
  *
  * Return: copy a str
