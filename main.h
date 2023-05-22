@@ -11,3 +11,15 @@
 #include <sys/types.h>
 #include <sys/wait.h>
 extern char **environ;
+
+/**
+ * struct list - list
+ * @str: str
+ * @next: next
+ */
+
+typedef struct list
+{
+	char *str;
+	struct list *next;
+} list_t;
