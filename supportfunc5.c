@@ -2,8 +2,8 @@
 
 /**
  * _strcat - strcat
- * @str1: first string
- * @str2: second string
+ * @str1: first str
+ * @str2: second str
  *
  * Return: returns the concat str
  */
@@ -35,9 +35,9 @@ char *_strcat(char *str1, char *str2)
 
 /**
  * _atoi - atoi
- * @str: string
+ * @str: str
  *
- * Return: an integer
+ * Return: int
  */
 int _atoi(char *str)
 {
@@ -72,8 +72,8 @@ int _atoi(char *str)
 
 /**
  * _strcmp - strcmp
- * @str1: tring 1
- * @str2: tring 2
+ * @str1: str1
+ * @str2: str2
  *
  * Return: Returns the difference of the strings
  */
