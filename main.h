@@ -1,15 +1,15 @@
 #ifndef MAIN_H
 #define MAIN_H
 
-#include <stdio.h>
 #include <stdlib.h>
-#include <signal.h>
-#include <stddef.h>
 #include <string.h>
+#include <stddef.h>
 #include <unistd.h>
-#include <sys/stat.h>
-#include <sys/types.h>
+#include <stdio.h>
 #include <sys/wait.h>
+#include <sys/stat.h>
+#include <signal.h>
+#include <sys/types.h>
 extern char **environ;
 
 /**
@@ -23,3 +23,10 @@ typedef struct list
 	char *str;
 	struct list *next;
 } list_t;
+
+char *_strdup(const char *str);
+char *str_concat(char *s1, char *s2);
+int _strcmp(const char *s1, const char *s2);
+int _strlen(const char *s);
+char *_strtok(char *str, char delim);
+char *_strcpy(char *dest, char *src);
