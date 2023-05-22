@@ -31,8 +31,8 @@ int _strlen(const char *s);
 char *_strtok(char *str, char delim);
 char *_strcpy(char *dest, char *src);
 char *_getenv(const char *name);
-
 void signal_isatty(void);
+ssize_t _getline(char **lineptr, size_t *n, FILE *stream);
 
 
 
