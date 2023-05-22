@@ -57,3 +57,9 @@ void free_and_exit(char *buffer)
 	free(buffer);
 	exit(0);
 }
+
+/*
+strncmp implementation
+error handling 
+check edge cases
+*/
