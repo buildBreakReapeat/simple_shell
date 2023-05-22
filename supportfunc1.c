@@ -133,7 +133,7 @@ int _unsetenv(char *name)
 	len = _strlen(name);
 	while (environ[i] != NULL)
 	{
-		if (strncmp(environ[i], name, len) == 0)
+		if (_strncmp(environ[i], name, len) == 0)
 		{
 			while (environ[i] != NULL)
 			{
