@@ -51,7 +51,7 @@ int child_fork(pid_t child_pid, char *name)
  * @str: str to tokenize
  * @builtIn: if there's a built-in or not
  *
- * Return: An array of tokenized strings
+ * Return: array of tokenized str
  */
 char **tokenize(char *str, int builtIn)
 {
