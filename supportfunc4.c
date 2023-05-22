@@ -29,11 +29,11 @@ int _isdigit(char *str)
 
 
 /**
- * child_fork - Forks a process
- * @child_pid: Process ID of the child process
- * @name: Name of the program
+ * child_fork - fork process
+ * @child_pid: process ID of the child process
+ * @name: Name of the progrma
  *
- * Return: The child process ID
+ * Return: child process ID
  */
 int child_fork(pid_t child_pid, char *name)
 {
