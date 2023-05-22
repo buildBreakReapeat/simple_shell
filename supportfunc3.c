@@ -39,8 +39,8 @@ char *trim_buff(char *str, int size)
 
 
 /**
- * trim_hash - Checks for comments
- * @str: String to traverse
+ * trim_hash - comments
+ * @str: str to serach
  *
  * Return: clean str if comments, if not same str
  */
