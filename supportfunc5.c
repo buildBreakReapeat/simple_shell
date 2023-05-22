@@ -71,7 +71,7 @@ int _atoi(char *str)
 }
 
 /**
- * _strcmp - strcmp
+ * _strcmp - strcmp implementation
  * @str1: str1
  * @str2: str2
  *
