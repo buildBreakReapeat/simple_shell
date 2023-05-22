@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _strcat - strcat
+ * _strcat - strcat implementation
  * @str1: first str
  * @str2: second str
  *
