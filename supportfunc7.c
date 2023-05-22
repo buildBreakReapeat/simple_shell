@@ -62,4 +62,5 @@ void free_and_exit(char *buffer)
 strncmp implementation
 error handling 
 check edge cases
+delstr
 */ 
