@@ -84,3 +84,37 @@ ssize_t _getline(char **lineptr, size_t *n, FILE *stream) {
     (*lineptr)[pos] = '\0';
     return pos;
 }
+
+/**
+ * path - if a file exists
+ * @filename: name of the file
+ *
+ * Return:  absolute path of file or NULL
+ */
+char *path(char *filename)
+{
+	char *PATH = _getenv("PATH");
+	char *clone = _strdup(PATH), *concat = NULL;
+	char *token = NULL, *absolute = NULL;
+	struct stat st;
+
+	token = _strtok(clone, ':');
+	concat = str_concat("/", filename);
+	while (token != NULL)
+	{
+		absolute = str_concat(token, concat);
+		if (stat(absolute, &st) == 0)
+		{
+			free(PATH);
+			free(clone);
+			free(concat);
+			return (absolute);
+		}
+		token = _strtok(NULL, ':');
+		free(absolute);
+	}
+	free(PATH);
+	free(concat);
+	free(clone);
+	return (NULL);
+}

@@ -1,5 +1,7 @@
 {
     "files.associations": {
-        "signal.h": "c"
+        "signal.h": "c",
+        "cstdlib": "c",
+        "fstream": "c"
     }
 }
