@@ -52,7 +52,7 @@ int _isdigit(char *str);
 int is_exit(char *str);
 char *create_variable(char *name, char *value);
 char *trim_hash(char *str);
-int is_dir(char *str);
+int cd_handler(char *str);
 char *trim_buff(char *str, int counter);
 int checkEnv(char *str);
 void case_assist(char *name);
