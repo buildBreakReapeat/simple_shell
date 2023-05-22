@@ -39,7 +39,6 @@ int _atoi(char *s);
 int is_setenv(char *str);
 char *path(char *filename);
 void ctrl_c_handler(int signum);
-void printenv(void);
 int is_help(char *str);
 int is_unset(char *str);
 int _setenv(char *name, char *value, int overwrite);
