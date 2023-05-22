@@ -1,8 +1,8 @@
 #include "main.h"
 
 /**
- * is_exit - Built-In inter for exit
- * @str: String to compare
+ * is_exit - exit cmd
+ * @str: str to cmp
  *
  * Return: int
  */
