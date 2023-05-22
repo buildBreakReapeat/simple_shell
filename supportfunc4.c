@@ -92,7 +92,7 @@ char **tokenize(char *str, int builtIn)
 }
 
 /**
- * _strcpy - src copies to dest 
+ * _strcpy - src copies to dest [strcpy] implementation
  * @dest: des string
  * @src: srtc string
  *
