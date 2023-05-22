@@ -32,7 +32,8 @@ char *_strtok(char *str, char delim);
 char *_strcpy(char *dest, char *src);
 
 
-
+void signal_isatty(void);
+char *getenv
 
 
 #endif
