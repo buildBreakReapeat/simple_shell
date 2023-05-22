@@ -80,7 +80,7 @@ char *trim_hash(char *str)
 
 
 /**
- * itsExecutable - Checks if path i executable
+ * itsExecutable - if path is exec
  * @path: path of the file
  *
  * Return: If executable or not
