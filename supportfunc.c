@@ -31,7 +31,7 @@ int is_str(char *str)
 
 /**
  * is_setenv - checker for setenv and edge cases
- * @str: String to compare
+ * @str: str to trav
  *
  * Return: If there's a coincidence or not
  */
@@ -59,7 +59,7 @@ int is_setenv(char *str)
 
 /**
  * is_unset - checker for setenv and edge cases
- * @str: String to compare
+ * @str: str to trav
  *
  * Return: If there's a coincidence or not
  */
@@ -91,7 +91,7 @@ int is_unset(char *str)
 
 /**
  * cd_handler - checker for cd (cd function)
- * @str: String to compare
+ * @str: str to trav
  *
  * Return: If there's a coincidence or not
  */
@@ -130,7 +130,7 @@ int cd_handler(char *str)
 
 /**
  * _checkBuiltIn - Checks if there's a Built-In in the buffer or not
- * @str: String to traverse
+ * @str: str to trav
  *
  * Return: If there's a coincidence or not
  */
