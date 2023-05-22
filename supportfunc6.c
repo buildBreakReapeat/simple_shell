@@ -29,7 +29,7 @@ char *_strdup(const char *str)
 
 
 /**
- * _getline - reads input and store it to
+ * _getline - reads input and store it to address [getline] implementation
  * @lineptr: pointer to line
  * @n: size to read
  * @stream: stream
