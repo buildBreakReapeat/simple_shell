@@ -25,3 +25,22 @@ int _isdigit(char *str)
 	}
 	return (flag);
 }
+
+/**
+ * free_array_dup - free array and the duplicated str
+ * @array: arrto free
+ * @dup: dup string to free
+ */
+void free_array_dup(char **array, char *dup)
+{
+	int i = 0;
+
+	while (array[i] != NULL)
+	{
+		free(array[i]);
+		i++;
+	}
+	free(array[i]);
+	free(array);
+	free(dup);
+}
