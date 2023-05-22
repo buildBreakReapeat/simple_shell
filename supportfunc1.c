@@ -21,8 +21,8 @@ int is_exit(char *str)
 
 
 /**
- * checkEnv - inter for env
- * @str: String to compare
+ * checkEnv - env cmd
+ * @str: str to search
  *
  * Return: int
  */
