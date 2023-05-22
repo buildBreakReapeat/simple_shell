@@ -25,15 +25,15 @@ typedef struct list
 } list_t;
 
 char *_strdup(const char *str);
-char *str_concat(char *s1, char *s2);
+char *_strcat(char *s1, char *s2);
 int _strcmp(const char *s1, const char *s2);
 int _strlen(const char *s);
 char *_strtok(char *str, char delim);
 char *_strcpy(char *dest, char *src);
-
+char *_getenv(const char *name);
 
 void signal_isatty(void);
-char *getenv
+
 
 
 #endif
