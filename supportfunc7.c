@@ -60,7 +60,7 @@ void free_and_exit(char *buffer)
 
 /*
 strncmp implementation
-error handling 
+error handlin
 check edge cases
 delstr
 */ 
