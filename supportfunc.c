@@ -58,10 +58,10 @@ int is_setenv(char *str)
 }
 
 /**
- * is_unset - checker for setenv and edge cases
+ * is_unset - setenv and edge cases
  * @str: str to trav
  *
- * Return: If there's a coincidence or not
+ * Return: 0 or 1
  */
 int is_unset(char *str)
 {
