@@ -30,7 +30,7 @@ int is_str(char *str)
 }
 
 /**
- * is_setenv - checker for setenv and edge cases
+ * is_setenv - chek setenv and edge cases
  * @str: str to trav
  *
  * Return: If there's a coincidence or not
