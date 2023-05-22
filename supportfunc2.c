@@ -15,7 +15,7 @@ int _setenv(char *name, char *value, int overwrite)
 	len = _strlen(name);
 	while (environ[i] != NULL)
 	{
-		if ((strncmp(environ[i], name, len) == 0) && overwrite != 0)
+		if ((_strncmp(environ[i], name, len) == 0) && overwrite != 0)
 		{
 			if (overwrite == 2)
 			{
