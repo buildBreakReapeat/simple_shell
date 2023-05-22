@@ -30,3 +30,9 @@ int _strcmp(const char *s1, const char *s2);
 int _strlen(const char *s);
 char *_strtok(char *str, char delim);
 char *_strcpy(char *dest, char *src);
+
+
+
+
+
+#endif
