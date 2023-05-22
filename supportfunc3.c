@@ -119,10 +119,10 @@ int isDir(const char *path)
 
 
 /**
- * getReturnValue - Get exit value
- * @str: String to traverse
+ * getReturnValue - exit value
+ * @str: str to seach
  *
- * Return: The exit value
+ * Return: exit val
  */
 int getReturnValue(char *str)
 {
