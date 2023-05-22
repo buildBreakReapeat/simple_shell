@@ -136,17 +136,17 @@ int cd_handler(char *str)
  */
 int _checkBuiltIn(char *str)
 {
-	if (checkDir(str) == 1)
+	if (is_dir(str) == 1)
 		return (2);
-	if (checkExit(str) == 1)
+	if (is_exit(str) == 1)
 		return (1);
-	if (checkEnv(str) == 1)
+	if (is_env(str) == 1)
 		return (3);
-	if (checkUnset(str) == 1)
+	if (is_unset(str) == 1)
 		return (4);
-	if (checkSetenv(str) == 1)
+	if (is_setenv(str) == 1)
 		return (5);
-	if (checkHelp(str) == 1)
+	if (is_help(str) == 1)
 		return (6);
 	return (0);
 }
