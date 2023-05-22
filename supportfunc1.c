@@ -10,7 +10,7 @@ int is_exit(char *str)
 {
 	char *cpy = _strdup(str);
 
-	if (strcmp(_strtok(cpy, ' '), "exit") == 0)
+	if (_strcmp(_strtok(cpy, ' '), "exit") == 0)
 	{
 		free(cpy);
 		return (1);
@@ -48,10 +48,10 @@ int checkEnv(char *str)
 
 
 /**
- * is_help - checker for Help
- * @str: String to compare
+ * is_help - checks for Help
+ * @str: str to cmp
  *
- * Return: If there's a coincidence or not
+ * Return: int
  */
 int is_help(char *str)
 {

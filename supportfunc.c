@@ -33,7 +33,7 @@ int is_str(char *str)
  * is_setenv - chek setenv and edge cases
  * @str: str to trav
  *
- * Return: If there's a coincidence or not
+ * Return: int
  */
 int is_setenv(char *str)
 {
@@ -132,7 +132,7 @@ int cd_handler(char *str)
  * _checkBuiltIn - Checks if there's a Built-In in the buffer or not
  * @str: str to trav
  *
- * Return: If there's a coincidence or not
+ * Return: int
  */
 int _checkBuiltIn(char *str)
 {
