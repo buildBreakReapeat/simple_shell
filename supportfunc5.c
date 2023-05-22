@@ -146,7 +146,7 @@ char *_strtok(char *str, char delim)
 }
 
 /**
- * _strlen - count str
+ * _strlen - strlen implementation
  * @s: str
  *
  * Return: count str
