@@ -120,7 +120,7 @@ void case_assist(char *name)
 }
 
 /**
- * _unsetenv - deletes the variable name from the environ
+ * _unsetenv - deletes var name from the environ
  * @name: variable namwe
  *
  * Return: 0 or -1 

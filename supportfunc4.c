@@ -113,7 +113,7 @@ char *_strcpy(char *dest, char *src)
 
 
 /**
- * _strncpy - copy a string
+ * _strncpy - copy a string [strncpy] implementation
  * @dest: string dest
  * @src: string to cpy
  * @n: bytes
