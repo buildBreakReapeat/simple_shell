@@ -100,7 +100,7 @@ int _strcmp(const char *str1, const char *str2)
 }
 
 /**
- * _strtok - strtok
+ * _strtok - strtok implementation
  * @str: str
  * @delim: delim
  *
