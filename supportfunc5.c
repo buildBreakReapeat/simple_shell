@@ -34,7 +34,7 @@ char *_strcat(char *str1, char *str2)
 }
 
 /**
- * _atoi - atoi
+ * _atoi - atoi implementation
  * @str: str
  *
  * Return: int
