@@ -8,18 +8,18 @@
 int main(void)
 {
 	size_t i = 0;
-	int counter = 0, builtIn = 0, status = 0, exitValue = 0, child_pid = 0;
+	int buffsize = 0, builtIn = 0, status = 0, exitValue = 0, child_pid = 0;
 	char *buffer = NULL, **argv = NULL, *dup = NULL;
 
 	while (1)
 	{
 		signal_isatty();
-		counter = _getline(&buffer, &i, stdin);
-		if (counter == -1)
+		buffsize = _getline(&buffer, &i, stdin);
+		if (buffsize == -1)
 			free_and_exit(buffer);
 		if (is_str(buffer) == -1)
 			continue;
-		buffer = trim_buff(buffer, counter);
+		buffer = trim_buff(buffer, buffsize);
 		builtIn = _checkBuiltIn(buffer);
 		if (builtIn == 1)
 		{

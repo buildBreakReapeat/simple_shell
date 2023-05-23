@@ -90,12 +90,18 @@ int itsExecutable(char *path)
 	if (isDir(path) == 0)
 	{
 		if (path[0] == '/')
+		{
 			perror(path);
+
+		}
 		else
-			perror(path);
+		{
+			perror("path");
+
+		}
 		return (1);
 	}
-	if (access(path, X_OK))
+	if (access(path, 1))
 		return (2);
 	else
 		return (0);
