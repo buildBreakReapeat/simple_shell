@@ -11,7 +11,7 @@ char *trim_buff(char *str, int size)
 {
 	int i = 0, tab = 0;
 	str[size - 1] = '\0';
-	
+
 
 	while (str[i])
 	{
@@ -108,7 +108,7 @@ int itsExecutable(char *path, int ac, char *av)
 
 
 
-			
+
 
 
 		}

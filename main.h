@@ -12,17 +12,7 @@
 #include <sys/types.h>
 extern char **environ;
 
-/**
- * struct list - list
- * @str: str
- * @next: next
- */
 
-typedef struct list
-{
-	char *str;
-	struct list *next;
-} list_t;
 
 char *_strdup(const char *str);
 char *_strcat(char *str1, char *str2);
