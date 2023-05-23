@@ -5,7 +5,7 @@
  *
  * Return: 0 If succeed, or the number of the error
  */
-int main(void)
+int main(int ac, char **av)
 {
 	size_t i = 0;
 	int buffsize = 0, builtIn = 0, status = 0, exitValue = 0, child_pid = 0;
@@ -30,7 +30,7 @@ int main(void)
 		}
 		dup = _strdup(buffer);
 		argv = tokenize(dup, builtIn);
-		if ((builtIn == 0 && itsExecutable(argv[0]) == 0))
+		if ((builtIn == 0 && itsExecutable(argv[0], ac, av[0]) == 0))
 			child_pid = child_fork(child_pid, argv[0]);
 		else
 			child_pid = 1;

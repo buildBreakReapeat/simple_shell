@@ -85,18 +85,31 @@ char *trim_hash(char *str)
  *
  * Return: If executable or not
  */
-int itsExecutable(char *path)
+int itsExecutable(char *path, int ac, char *av)
 {
 	if (isDir(path) == 0)
 	{
 		if (path[0] == '/')
 		{
-			perror(path);
-
+			write(STDERR_FILENO, path, _strlen(path));
 		}
 		else
 		{
-			perror("path");
+			write(STDERR_FILENO, av, _strlen(av));
+			write(STDERR_FILENO, ": ", 2);
+			write(STDERR_FILENO, &ac, sizeof(ac));
+			write(STDERR_FILENO, ": ", 2);
+			write(STDERR_FILENO, path, _strlen(path));
+			write(STDERR_FILENO, ": ", 2);
+			write(STDERR_FILENO, "not found", 9);
+			write(STDERR_FILENO, "\n", 1);
+
+
+
+
+
+			
+
 
 		}
 		return (1);

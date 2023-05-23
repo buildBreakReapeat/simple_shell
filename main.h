@@ -56,7 +56,7 @@ void case_assist(char *name);
 int getReturnValue(char *str);
 char **tokenize(char *str, int builtIn);
 int isDir(const char *fileName);
-int itsExecutable(char *str);
+int itsExecutable(char *path, int ac, char *av);
 int child_fork(pid_t child_pid, char *name);
 void free_array_dup(char **array, char *dup);
 void free_and_exit(char *str);
