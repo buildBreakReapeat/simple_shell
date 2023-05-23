@@ -136,7 +136,7 @@ int cd_handler(char *str)
  */
 int _checkBuiltIn(char *str)
 {
-	if (is_dir(str) == 1)
+	if (cd_handler(str) == 1)
 		return (2);
 	if (is_exit(str) == 1)
 		return (1);

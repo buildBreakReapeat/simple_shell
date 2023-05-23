@@ -99,10 +99,10 @@ char *path(char *filename)
 	struct stat st;
 
 	token = _strtok(clone, ':');
-	concat = str_concat("/", filename);
+	concat = _strcat("/", filename);
 	while (token != NULL)
 	{
-		absolute = str_concat(token, concat);
+		absolute = _strcat(token, concat);
 		if (stat(absolute, &st) == 0)
 		{
 			free(PATH);

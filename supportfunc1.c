@@ -26,7 +26,7 @@ int is_exit(char *str)
  *
  * Return: int
  */
-int checkEnv(char *str)
+int is_env(char *str)
 {
     int i = 0;
 	char *cpy = _strdup(str);

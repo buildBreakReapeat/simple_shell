@@ -51,7 +51,7 @@ char *create_variable(char *name, char *value);
 char *trim_hash(char *str);
 int cd_handler(char *str);
 char *trim_buff(char *str, int counter);
-int checkEnv(char *str);
+int is_env(char *str);
 void case_assist(char *name);
 int getReturnValue(char *str);
 char **tokenize(char *str, int builtIn);
