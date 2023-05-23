@@ -61,4 +61,5 @@ int child_fork(pid_t child_pid, char *name);
 void free_array_dup(char **array, char *dup);
 void free_and_exit(char *str);
 int _checkBuiltIn(char *str);
+int _strncmp(const char *s1, const char *s2, size_t n);
 #endif
