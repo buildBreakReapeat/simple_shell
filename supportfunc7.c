@@ -53,3 +53,39 @@ int _strncmp(const char *s1, const char *s2, size_t n)
     }
 }
 
+/**
+ * _itoa - converts n to char in str
+ * @n: num
+ * @s: str
+*/
+void _itoa(int n, char s[])
+ {
+     int i, sign;
+
+     if ((sign = n) < 0)
+         n = -n;
+     i = 0;
+     do {      
+         s[i++] = n % 10 + '0';   
+     } while ((n /= 10) > 0);     
+     if (sign < 0)
+         s[i++] = '-';
+     s[i] = '\0';
+     _reverse(s);
+}
+
+/**
+ * _itoa - converts n to char in str
+ * @s: str
+*/
+ void _reverse(char s[])
+ {
+     int i, j;
+     char c;
+
+     for (i = 0, j = strlen(s)-1; i<j; i++, j--) {
+         c = s[i];
+         s[i] = s[j];
+         s[j] = c;
+     }
+}  

@@ -87,6 +87,8 @@ char *trim_hash(char *str)
  */
 int itsExecutable(char *path, int ac, char *av)
 {
+	ac += '0';
+	
 	if (isDir(path) == 0)
 	{
 		if (path[0] == '/')
@@ -97,7 +99,7 @@ int itsExecutable(char *path, int ac, char *av)
 		{
 			write(STDERR_FILENO, av, _strlen(av));
 			write(STDERR_FILENO, ": ", 2);
-			write(STDERR_FILENO, &ac, sizeof(ac));
+			write(STDERR_FILENO, &ac, 4);
 			write(STDERR_FILENO, ": ", 2);
 			write(STDERR_FILENO, path, _strlen(path));
 			write(STDERR_FILENO, ": ", 2);
@@ -108,7 +110,7 @@ int itsExecutable(char *path, int ac, char *av)
 
 
 
-
+			
 
 
 		}

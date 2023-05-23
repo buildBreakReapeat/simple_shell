@@ -52,4 +52,6 @@ void free_array_dup(char **array, char *dup);
 void free_and_exit(char *str);
 int _checkBuiltIn(char *str);
 int _strncmp(const char *s1, const char *s2, size_t n);
+void _itoa(int n, char s[]);
+void _reverse(char s[]);
 #endif
