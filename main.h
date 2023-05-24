@@ -11,7 +11,7 @@
 #include <signal.h>
 #include <sys/types.h>
 extern char **environ;
-
+#define min(x, y) (((x) < (y)) ? (x) : (y))
 
 
 char *_strdup(const char *str);
@@ -39,6 +39,7 @@ int _isdigit(char *str);
 int is_exit(char *str);
 char *create_variable(char *name, char *value);
 char *trim_hash(char *str);
+void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size);
 int cd_handler(char *str);
 char *trim_buff(char *str, int counter);
 int is_env(char *str);
