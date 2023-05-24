@@ -13,7 +13,7 @@
 extern char **environ;
 #define min(x, y) (((x) < (y)) ? (x) : (y))
 
-
+size_t betty_is_annoying(char **lineptr, size_t *n, FILE *stream, int *c );
 char *_strdup(const char *str);
 char *_strcat(char *str1, char *str2);
 int _strcmp(const char *str1, const char *str2);

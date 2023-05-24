@@ -40,3 +40,33 @@ void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 			return (NULL);
 	}
 }
+
+size_t betty_is_annoying(char **lineptr, size_t *n, FILE *stream, int *c )
+{
+    size_t pos;
+	char *new_ptr;
+
+	pos = 0;
+    while (*c != EOF)
+	{
+	if (pos + 1 >= *n)
+	{
+		size_t new_size = *n + (*n >> 2);
+
+		if (new_size < 128)
+			new_size = 128;
+		new_ptr = _realloc(lineptr, 128, new_size);
+		if (new_ptr == NULL)
+			return (-1);
+		*n = new_size;
+		*lineptr = new_ptr;
+	}
+	((unsigned char *)(*lineptr))[pos++] = *c;
+	if (*c == '\n')
+		break;
+	*c = getc(stream);
+	}
+	(*lineptr)[pos] = '\0';
+
+    return (pos);
+}
