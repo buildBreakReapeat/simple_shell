@@ -95,8 +95,7 @@ int args(char *str)
  */
 void signal_isatty(void)
 {
-	write(STDOUT_FILENO, "\n$ ", 4);
-
+	
 	if ((isatty(STDIN_FILENO) == 1))
 		write(STDOUT_FILENO, "($) ", 4);
 }
