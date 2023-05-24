@@ -38,10 +38,11 @@ void free_and_exit(char *buffer)
 * @str1:string 1
 * @str2: string 2
 * @n: size
-*/ 
+*/
 int _strncmp(const char *s1, const char *s2, size_t n)
 {
-    while (n && *s1 && (*s1 == *s2)) {
+    while (n && *s1 && (*s1 == *s2))
+    {
         s1++;
         s2++;
         n--;
