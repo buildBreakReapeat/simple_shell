@@ -134,10 +134,10 @@ char *_getenv(const char *var)
 }
 
 /**
- * waitAndFree - Waits and frees things
- * @status: Status of the process
- * @argv: Array to free
- * @dup: Duplicated array to free
+ * wait_free - Waits and frees things
+ * @status: status of the process
+ * @argv: array to free
+ * @dup: duplicated array to free
  *
  * Return: Returns the status of isatty
  */

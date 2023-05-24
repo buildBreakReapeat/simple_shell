@@ -21,7 +21,7 @@ int is_exit(char *str)
 
 
 /**
- * checkEnv - env cmd
+ * is_env - env cmd
  * @str: str to search
  *
  * Return: int
