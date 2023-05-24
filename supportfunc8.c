@@ -41,6 +41,15 @@ void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 	}
 }
 
+/**
+ * betty_is_annoying - fulfilling betty guidlines by truncating _getline to 40 lines
+  * @lineptr: pointer to line
+ * @n: size to read
+ * @stream: stream
+ * @c: pointer to int
+ * Return: pos
+ * 
+*/
 size_t betty_is_annoying(char **lineptr, size_t *n, FILE *stream, int *c )
 {
     size_t pos;
