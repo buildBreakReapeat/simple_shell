@@ -57,7 +57,7 @@ ssize_t _getline(char **lineptr, size_t *n, FILE *stream)
 		return (-1);
 	*n = 128;
 	}
-	
+
 	return (betty_is_annoying(lineptr, n, stream, x));
 }
 
