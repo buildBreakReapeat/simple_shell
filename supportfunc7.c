@@ -54,7 +54,7 @@ int _strncmp(const char *str1, const char *str2, size_t n)
 	}
 	else
 	{
-		return ((*(unsigned char *)s1 - *(unsigned char *)s2));
+		return ((*(unsigned char *)str1 - *(unsigned char *)str2));
 	}
 }
 
