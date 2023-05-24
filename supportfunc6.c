@@ -36,53 +36,64 @@ char *_strdup(const char *str)
  * Return: pos
  */
 
-ssize_t _getline(char **lineptr, size_t *n, FILE *stream) {
-    size_t pos;
-    char *new_ptr;
-    int c;
+ssize_t _getline(char **lineptr, size_t *n, FILE *stream)
+{
+	size_t pos;
+	char *new_ptr;
+	int c;
 
-    if (lineptr == NULL || stream == NULL || n == NULL) {
-        errno = EINVAL;
-        return -1;
-    }
+	if (lineptr == NULL || stream == NULL || n == NULL)
+	{
+	errno = EINVAL;
+	return (-1);
+	}
 
-    c = getc(stream);
-    if (c == EOF) {
-        return -1;
-    }
+	c = getc(stream);
+	if (c == EOF)
+	{
+	return (-1);
+	}
 
-    if (*lineptr == NULL) {
-        *lineptr = malloc(128);
-        if (*lineptr == NULL) {
-            return -1;
-        }
-        *n = 128;
-    }
+	if (*lineptr == NULL)
+	{
+	*lineptr = malloc(128);
+	if (*lineptr == NULL)
+	{
+		return (-1);
+	}
+	*n = 128;
+	}
 
-    pos = 0;
-    while(c != EOF) {
-        if (pos + 1 >= *n) {
-            size_t new_size = *n + (*n >> 2);
-            if (new_size < 128) {
-                new_size = 128;
-            }
-            new_ptr = realloc(*lineptr, new_size);
-            if (new_ptr == NULL) {
-                return -1;
-            }
-            *n = new_size;
-            *lineptr = new_ptr;
-        }
+	pos = 0;
+	while (c != EOF)
+	{
+	if (pos + 1 >= *n)
+	{
+		size_t new_size = *n + (*n >> 2);
 
-        ((unsigned char *)(*lineptr))[pos ++] = c;
-        if (c == '\n') {
-            break;
-        }
-        c = getc(stream);
-    }
+		if (new_size < 128)
+		{
+			new_size = 128;
+		}
+		new_ptr = realloc(*lineptr, new_size);
+		if (new_ptr == NULL)
+		{
+			return (-1);
+		}
+		*n = new_size;
+		*lineptr = new_ptr;
+	}
 
-    (*lineptr)[pos] = '\0';
-    return pos;
+	((unsigned char *)(*lineptr))[pos++] = c;
+	if (c == '\n')
+	{
+	break;
+	}
+	c = getc(stream);
+	}
+
+	(*lineptr)[pos] = '\0';
+	return (pos);
 }
 
 /**

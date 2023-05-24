@@ -28,18 +28,18 @@ int is_exit(char *str)
  */
 int is_env(char *str)
 {
-    int i = 0;
+	int i = 0;
 	char *cpy = _strdup(str);
 
 	if (_strcmp(_strtok(cpy, ' '), "env") == 0)
 	{
 		free(cpy);
 		while (environ[i])
-        {
-            write(1, environ[i], _strlen(environ[i]));
-            write(1, "\n", 1);
-            i++;
-        }
+		{
+			write(1, environ[i], _strlen(environ[i]));
+			write(1, "\n", 1);
+			i++;
+		}
 		return (1);
 	}
 	free(cpy);
@@ -123,7 +123,7 @@ void case_assist(char *name)
  * _unsetenv - deletes var name from the environ
  * @name: variable namwe
  *
- * Return: 0 or -1 
+ * Return: 0 or -1
  */
 int _unsetenv(char *name)
 {

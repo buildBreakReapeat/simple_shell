@@ -10,6 +10,7 @@
 char *trim_buff(char *str, int size)
 {
 	int i = 0, tab = 0;
+
 	str[size - 1] = '\0';
 
 
@@ -82,18 +83,27 @@ char *trim_hash(char *str)
 /**
  * itsExecutable - if path is exec
  * @path: path of the file
- *
+ * @ac: cmd count
+ * @av: cms vector
  * Return: If executable or not
  */
 int itsExecutable(char *path, int ac, char *av)
 {
 	ac += '0';
-	
+
 	if (isDir(path) == 0)
 	{
 		if (path[0] == '/')
 		{
+			write(STDERR_FILENO, av, _strlen(av));
+			write(STDERR_FILENO, ": ", 2);
+			write(STDERR_FILENO, &ac, 4);
+			write(STDERR_FILENO, ": ", 2);
 			write(STDERR_FILENO, path, _strlen(path));
+			write(STDERR_FILENO, ": ", 2);
+			write(STDERR_FILENO, "not found", 9);
+			write(STDERR_FILENO, "\n", 1);
+
 		}
 		else
 		{
@@ -105,12 +115,6 @@ int itsExecutable(char *path, int ac, char *av)
 			write(STDERR_FILENO, ": ", 2);
 			write(STDERR_FILENO, "not found", 9);
 			write(STDERR_FILENO, "\n", 1);
-
-
-
-
-
-			
 
 
 		}

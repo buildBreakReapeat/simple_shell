@@ -5,7 +5,7 @@
  * @value: variable value
  * @overwrite: if func should overwrite or not
  *
- * Return: 0 or -1 
+ * Return: 0 or -1
  */
 int _setenv(char *name, char *value, int overwrite)
 {
@@ -41,7 +41,7 @@ int _setenv(char *name, char *value, int overwrite)
  * ctrl_c_handler - handler for ^C
  * @signum: Signal number
  */
-void ctrl_c_handler(__attribute__((unused))int sigum)
+void ctrl_c_handler(__attribute__((unused))int signum)
 {
 	write(STDOUT_FILENO, "\n$ ", 4);
 }

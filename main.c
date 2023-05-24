@@ -2,7 +2,8 @@
 
 /**
  * main - Recreation of a "sh"
- *
+ *@ac: count cmd line args
+*@av: array of user defined cmds
  * Return: 0 If succeed, or the number of the error
  */
 int main(int ac, char **av)

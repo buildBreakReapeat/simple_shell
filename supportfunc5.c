@@ -158,4 +158,5 @@ int _strlen(const char *s)
 	while (s[i])
 		i++;
 	return (i);
+
 }
